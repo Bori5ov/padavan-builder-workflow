@@ -97,8 +97,9 @@ jobs:
           cp "configs/${{ inputs.config_file }}" release/build.config
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v8
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.ARCHIVE_NAME }}
           path: release/
           retention-days: 7
+          
