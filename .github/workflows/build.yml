@@ -86,3 +86,4 @@ jobs:
           echo "Firmware size ($fw_size_fmtd) exceeds max size ($max_fw_size_fmtd) for your target device"
           exit 1
         fi
+        
